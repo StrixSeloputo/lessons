@@ -1,0 +1,102 @@
+html, body {
+    height: 100%;
+    width: 100%;
+} 
+
+.lamp {
+    height: 75%;
+    width: 20%;
+    position: relative;
+    left: 35%;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    /* латунь */
+    --lamp-antique: #B5A642;
+}
+
+.lamp__lampshade {
+    flex-grow: 2;
+    transform: rotate(15deg);
+    z-index: 10;
+}
+.lamp__leg {
+    flex-grow: 2.5;
+    position: relative;
+    z-index: 5;
+}
+.lamp__base_complex {
+    flex-grow: 4;
+    position: relative;
+    z-index: 5;
+}
+
+.lamp__switch {
+    position: absolute;
+    left: 17%;
+    top: 17%;
+    z-index: 7;
+    background: var(--lamp-antique);
+}
+
+.light-bulb {
+    background: yellow;
+    position: absolute;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    left: 20%;
+    top: 13%;
+    z-index: 7;
+}
+
+.lamp__lampshade-holder {
+    height: 15px;
+    width: 100%;
+    position: absolute;
+    top: -40%;
+    left: 20%;
+    transform: rotate(10deg);
+    z-index: 3;
+    background: var(--lamp-antique);
+}
+.lamp__pylon {
+    height: 140%;
+    width: 15px;
+    position: absolute;
+    top: -40%;
+    left: 80%;
+    z-index: 2;
+    background: var(--lamp-antique);
+}
+
+.lamp__narrow-base {
+    height: 40%;
+    width: 20%;
+    position: absolute;
+    left: 73%;
+    background: var(--lamp-antique);
+}
+.lamp__wide-base {
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    background: var(--lamp-antique);
+}
+
+.lamp__switch_chain {
+    height: 200px;
+    width: 1px;
+    outline: 3px dashed #B5A642;
+}
+.lamp__lampshade_green-glass {
+    /* изумрудный */
+    background: #50C878;
+    opacity: 0.9;
+}
+.light-bulb_neutral {
+    /* нейтральный */
+    background: #FDFD96;
+}
