@@ -1,0 +1,1 @@
+const bind = (fn, context, ...bindArgs) => (...args) => fn.apply(context, [...bindArgs, ...args]);
